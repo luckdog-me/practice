@@ -1,0 +1,19 @@
+class soulution{
+  public boolean isPalindrome(int x){
+    String n=""+x;
+    int left=0;
+    int right=n.length()-1;
+    if(x<0){
+      return false;
+    }
+    while(left!=right){
+      if(n.charAt(left)!=n.charAt(right)){
+        return false;
+      }else{
+        left++;
+        right--;
+      }
+    }
+    return true;
+  }
+}
